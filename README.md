@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GoSembako Landing Page
 
-## Getting Started
+Website landing page modern untuk grosir sembako, dibangun menggunakan Next.js (App Router), TypeScript, dan Tailwind CSS v4.
 
-First, run the development server:
+## Fitur Utama
+- ⚡ **Next.js App Router** untuk performa tinggi dan SEO optimal.
+- 🎨 **Tailwind CSS v4** dengan konfigurasi warna custom (Primary Teal & Secondary Cream).
+- 📱 **Mobile-First Design** yang responsif sepenuhnya.
+- 🛍️ **Katalog Produk Dinamis** dengan Modal detail harga.
+- 💬 **Integrasi WhatsApp** dengan pesan otomatis berdasarkan produk.
+- ♿ **Aksesibilitas (A11y)**: Semantic HTML, ARIA labels, dan keyboard navigation.
+- 🚀 **SEO Ready**: Metadata, JSON-LD Structured Data, Sitemap, Robots.txt.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Persyaratan Sistem
+- Node.js >= 18.17.0
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Cara Menjalankan
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1.  **Install Dependencies:**
+    ```bash
+    npm install
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2.  **Jalankan Development Server:**
+    ```bash
+    npm run dev
+    ```
+    Buka [http://localhost:3000](http://localhost:3000) di browser.
 
-## Learn More
+3.  **Build untuk Production:**
+    ```bash
+    npm run build
+    npm start
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+## Struktur Proyek
+- `src/components`: Komponen UI yang dipisah (Sections, UI elements, Layout).
+- `src/data`: Data produk dan konten teks (mudah diedit tanpa mengubah kode).
+- `src/app`: Halaman dan routing Next.js.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Instruksi Deployment (Vercel)
+Proyek ini dioptimalkan untuk Vercel.
+1. Push kode ke GitHub/GitLab/Bitbucket.
+2. Buka dashboard Vercel -> "Add New Project".
+3. Import repository ini.
+4. Klik **Deploy**. (Tidak perlu konfigurasi tambahan, Vercel mendeteksi Next.js secara otomatis).
