@@ -1,6 +1,7 @@
 import React from 'react';
 import { ABOUT_CONTENT } from '@/data/content';
 import { CheckCircle2 } from 'lucide-react';
+import Image from 'next/image';
 
 const About = () => {
   return (
@@ -39,10 +40,13 @@ const About = () => {
           </div>
 
           <div className='relative h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-gray-200'>
-            {/* Replace with actual about image */}
-            <div className='absolute inset-0 flex items-center justify-center bg-gray-100 text-gray-400'>
-              <span className='text-lg'>Gambar Gudang / Aktivitas</span>
-            </div>
+            <Image
+              src='/images/image-about.jpg'
+              alt='about us'
+              width={400}
+              height={300}
+              className='object-center bg-cover w-full h-full'
+            />
           </div>
         </div>
       </div>

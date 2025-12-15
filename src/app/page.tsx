@@ -8,6 +8,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import ScrollToTop from '@/components/ui/ScrollToTop';
 import Products from '@/components/sections/Product';
 import FloatingWhatsApp from '@/components/ui/FloatingWhatsapp';
+import Testimonials from '@/components/sections/Testimonials';
 
 export default function Home() {
   return (
@@ -31,7 +32,7 @@ export default function Home() {
       <WhyChooseUs />
       <CTABanner />
       <Products />
-
+      <Testimonials />
       {/* Contact Section text before footer */}
       <section className='bg-primary-dark text-white py-16 text-center'>
         <div className='container-custom'>

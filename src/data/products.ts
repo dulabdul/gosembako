@@ -6,7 +6,7 @@ export const products: Product[] = [
     name: "Gula Pasir",
     category: "Sembako",
     description: "Gula pasir putih dan kuning berkualitas, tersedia dalam kemasan sak 50kg dan 25kg.",
-    image: "/images/products/sugar-placeholder.jpg",
+    image: "/images/products/gula-pasir.png",
     rating: 5,
     priceList: [
       {
@@ -34,7 +34,7 @@ export const products: Product[] = [
     name: "Beras Premium",
     category: "Beras",
     description: "Beras kualitas premium, medium, pulen, dan wangi dari berbagai merek terpercaya.",
-    image: "/images/products/rice-placeholder.jpg",
+    image: "/images/products/beras.png",
     rating: 5,
     priceList: [
       {
@@ -70,7 +70,7 @@ export const products: Product[] = [
     name: "Minyak Goreng",
     category: "Minyak",
     description: "Minyak goreng berbagai merek terpercaya (Bimoli, Sunco, Tropical, dll) dengan harga grosir.",
-    image: "/images/products/oil-placeholder.jpg",
+    image: "/images/products/minyak.png",
     rating: 5,
     priceList: [
       {
@@ -102,7 +102,7 @@ export const products: Product[] = [
     name: "Tepung Terigu",
     category: "Tepung",
     description: "Tepung terigu untuk roti, kue, gorengan, dan kebutuhan usaha kuliner.",
-    image: "/images/products/flour-placeholder.jpg",
+    image: "/images/products/tepung.png",
     rating: 5,
     priceList: [
       {
@@ -123,21 +123,14 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "mie-instan",
-    name: "Mie Instan",
+    id: "mie-instan-sedap",
+    name: "Mie Sedap Instan",
     category: "Mie",
-    description: "Indomie dan Mie Sedaap berbagai varian rasa dengan harga grosir per dus.",
-    image: "/images/products/noodle-placeholder.jpg",
+    description: "Mie Sedaap berbagai varian rasa dengan harga grosir per dus.",
+    image: "/images/products/sedap.png",
     rating: 5,
     priceList: [
-      {
-        groupName: "Indomie",
-        items: [
-          { name: "Indomie Ayam Bawang", price: "Rp. 75.000 / DUS" },
-          { name: "Indomie Soto Mie", price: "Rp. 78.000 / DUS" },
-          { name: "Indomie Goreng", price: "Rp. 75.000 / DUS" },
-        ]
-      },
+ 
       {
         groupName: "Mie Sedaap",
         items: [
@@ -152,7 +145,7 @@ export const products: Product[] = [
     name: "Gas LPG",
     category: "Gas",
     description: "Gas LPG 3 kg, 5.5 kg, dan 12 kg untuk agen dan pangkalan.",
-    image: "/images/products/gas-placeholder.jpg",
+    image: "/images/products/gas.png",
     rating: 5,
     priceList: [
       {
@@ -177,7 +170,7 @@ export const products: Product[] = [
     name: "Kopi Sachet",
     category: "Minuman",
     description: "Kopi sachet Good Day, Kapal Api, ABC, Indocafe lengkap.",
-    image: "/images/products/coffee-placeholder.jpg",
+    image: "/images/products/kopi-sachet.png",
     rating: 5,
     priceList: [
         {
@@ -195,7 +188,7 @@ export const products: Product[] = [
     name: "Teh Kemasan",
     category: "Minuman",
     description: "Teh celup dan serbuk berbagai merek (Sosro, SariWangi, 2 Tang, Poci).",
-    image: "/images/products/tea-placeholder.jpg",
+    image: "/images/products/teh.png",
     rating: 5,
     priceList: [
         {
@@ -213,7 +206,7 @@ export const products: Product[] = [
     name: "Gula Kemasan 1KG",
     category: "Gula",
     description: "Gula pasir kemasan 1KG berbagai merek (Rose Brand, Gulaku, Sania, dll).",
-    image: "/images/products/sugar-pack-placeholder.jpg",
+    image: "/images/products/gula.png",
     rating: 5,
     priceList: [
          {
@@ -227,20 +220,22 @@ export const products: Product[] = [
         }
     ]
   },
-  {
-    id: "bumbu-dapur",
-    name: "Bumbu & Penyedap",
-    category: "Bumbu",
-    description: "Penyedap rasa, garam, dan kebutuhan dapur lainnya (Royco, Masako, Ajinomoto).",
-    image: "/images/products/spice-placeholder.jpg",
+ {
+    id: "mie-instan-indomie",
+    name: "Indomie Mie Instan",
+    category: "Mie",
+    description: "Indomie berbagai varian rasa dengan harga grosir per dus.",
+    image: "/images/products/indomie.png",
     rating: 5,
     priceList: [
-         {
-            groupName: "Penyedap Rasa",
-            items: [
-                { name: "Hubungi admin untuk list lengkap", price: "Harga Terbaik" },
-            ]
-        }
+      {
+        groupName: "Indomie",
+        items: [
+          { name: "Indomie Ayam Bawang", price: "Rp. 75.000 / DUS" },
+          { name: "Indomie Soto Mie", price: "Rp. 78.000 / DUS" },
+          { name: "Indomie Goreng", price: "Rp. 75.000 / DUS" },
+        ]
+      },
     ]
-  }
+  },
 ];

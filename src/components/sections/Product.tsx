@@ -48,19 +48,18 @@ const Products = () => {
               className='bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer group flex flex-col h-full'
               onClick={() => setSelectedProduct(product)}>
               {/* Image Section */}
-              <div className='relative h-56 w-full bg-gray-100 overflow-hidden'>
+              <div className='relative h-80 w-full bg-gray-100 overflow-hidden'>
                 <div className='absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-400 font-medium'>
                   {/* Placeholder Image */}
                   <span className='text-lg'>{product.name}</span>
                 </div>
-                {/* <Image 
-                    src={product.image} 
-                    alt={product.name}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                /> 
-                */}
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  className='object-cover group-hover:scale-105 transition-transform duration-500'
+                  sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+                />
               </div>
 
               {/* Card Body */}

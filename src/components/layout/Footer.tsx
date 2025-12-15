@@ -85,16 +85,6 @@ const Footer = () => {
               </svg>
               <span>WhatsApp Admin</span>
             </a>
-            <a
-              href='https://instagram.com'
-              className='flex items-center gap-3 hover:text-pink-400 transition-colors'>
-              <Instagram className='h-5 w-5' />
-              <span>{SITE_CONFIG.instagram}</span>
-            </a>
-            <div className='flex items-start gap-3'>
-              <MapPin className='h-5 w-5 shrink-0 mt-0.5' />
-              <span>{SITE_CONFIG.address}</span>
-            </div>
           </div>
         </div>
       </div>
