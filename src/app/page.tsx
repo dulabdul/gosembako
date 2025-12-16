@@ -16,7 +16,7 @@ export default function Home() {
       <Navbar />
       <div className='pt-20'></div>
       <Hero />
-      <div className='relative z-10 bg-white shadow-[0_-20px_40px_rgba(0,0,0,0.05)] rounded-t-[2.5rem] -mt-10'>
+      <div className='relative z-10 bg-white shadow-[0_-20px_40px_rgba(0,0,0,0.05)] rounded-t-[2.5rem] -mt-3'>
         <div className='pt-10'>
           <section className='container-custom text-center pb-8'>
             <span className='inline-block bg-secondary text-primary px-4 py-1 rounded-full text-sm font-semibold mb-4'>
