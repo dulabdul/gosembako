@@ -1,7 +1,7 @@
 import React from 'react';
+import Image from 'next/image'; // Pastikan import Image
 import { ABOUT_CONTENT } from '@/data/content';
 import { CheckCircle2 } from 'lucide-react';
-import Image from 'next/image';
 
 const About = () => {
   return (
@@ -9,6 +9,7 @@ const About = () => {
       id='about'
       className='py-20 bg-white'>
       <div className='container-custom'>
+        {/* Header Section */}
         <div className='max-w-4xl mx-auto text-center mb-12'>
           <h2 className='text-primary font-bold tracking-wide uppercase text-sm mb-2'>
             Tentang Kami
@@ -22,11 +23,13 @@ const About = () => {
         </div>
 
         <div className='grid md:grid-cols-2 gap-12 items-center'>
-          <div className='space-y-6 text-gray-600 leading-relaxed text-justify'>
+          {/* Kolom Kiri: Teks & Stats */}
+          <div className='space-y-6 text-gray-600 leading-relaxed text-justify order-2 md:order-1'>
             {ABOUT_CONTENT.description.map((paragraph, idx) => (
               <p key={idx}>{paragraph}</p>
             ))}
 
+            {/* Badges / Stats */}
             <div className='flex flex-wrap gap-4 pt-4'>
               {ABOUT_CONTENT.stats.map((stat, idx) => (
                 <div
@@ -39,13 +42,21 @@ const About = () => {
             </div>
           </div>
 
-          <div className='relative h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-gray-200'>
+          {/* Kolom Kanan: Gambar */}
+          {/* PERBAIKAN DISINI: 
+              - Mobile: h-64 (256px) agar tidak terlalu tinggi.
+              - Desktop: md:h-[500px] agar tinggi dan gagah mengimbangi teks.
+              - order-1 md:order-2: Di mobile gambar tampil DULUAN (di atas teks), 
+                atau hapus class order jika ingin teks dulu baru gambar.
+          */}
+          <div className='relative h-64 md:h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl bg-gray-100 order-1 md:order-2 border border-gray-100'>
+            {/* Masukkan gambar About Anda disini */}
             <Image
-              src='/images/image-about.jpg'
-              alt='about us'
-              width={400}
-              height={300}
-              className='object-center bg-cover w-full h-full'
+              src='/images/image-about.jpg' // Ganti dengan nama file gambar Anda di folder public/images/
+              alt='Gudang Sembako Go Sembako'
+              fill
+              className='object-cover'
+              sizes='(max-width: 768px) 100vw, 50vw'
             />
           </div>
         </div>
