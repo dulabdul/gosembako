@@ -7,8 +7,8 @@ const testimonials = [
     id: 1,
     name: 'Bu Siti Aminah',
     role: 'Pemilik Warung Sembako',
-    image:
-      'https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&q=80&w=200&h=200',
+    // Foto wanita Indonesia (berhijab) agar lebih relevan dengan profil pemilik warung
+    image: '/images/face1.jpg',
     content:
       'Alhamdulillah sejak ambil barang di GoSembako, keuntungan warung saya naik. Harganya beneran grosir termurah dibanding tempat lain. Pengiriman juga cepat sampai depan toko.',
     rating: 5,
@@ -17,8 +17,8 @@ const testimonials = [
     id: 2,
     name: 'Budi Santoso',
     role: 'Agen Reseller',
-    image:
-      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200',
+    // Foto pria Asia/Indonesia
+    image: '/images/face2.jpg',
     content:
       'Respon admin cepat banget via WA. Stok gula dan minyak selalu ready dalam jumlah besar. Sangat recommended buat yang mau mulai usaha grosiran.',
     rating: 5,
@@ -27,8 +27,8 @@ const testimonials = [
     id: 3,
     name: 'Ratna Dewi',
     role: 'Ibu Rumah Tangga / Katering',
-    image:
-      'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200&h=200',
+    // Foto wanita Asia (Ibu rumah tangga/pengusaha katering)
+    image: '/images/face3.jpg',
     content:
       'Awalnya ragu beli online, tapi ternyata amanah. Berasnya pulen dan wangi sesuai deskripsi. Langganan terus buat kebutuhan usaha katering saya.',
     rating: 5,
