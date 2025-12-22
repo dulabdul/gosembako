@@ -1,7 +1,7 @@
 export const SITE_CONFIG = {
   name: "GoSembako",
   domain: "gosembako.com",
-  whatsapp: "6285937074700", // Ganti dengan nomor asli
+  whatsapp: "6282364153989", // Ganti dengan nomor asli
   address: "Jl. Raya Grosir No. 1, Jakarta, Indonesia",
   instagram: "@gosembako_id",
 };
